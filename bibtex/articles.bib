@@ -1,0 +1,70 @@
+@article{maullinsapey2022spatial,
+  title={Spatial Confidence Regions for Combinations of Excursion Sets in Image Analysis},
+  author={Maullin-Sapey, T. and Schwartzman, A. and Nichols, T.E.},
+  year={2022},
+  journal={arXiv preprint arXiv:2201.02743},
+  url={https://doi.org/10.48550/arXiv.2201.02743},
+  doi={https://doi.org/10.48550/arXiv.2201.02743},
+  img={./img/publications/2022_SpatialConfRegions.png},
+  abstract={The analysis of excursion sets in imaging data is essential to a wide range of scientific disciplines such as neuroimaging, climatology and cosmology. Despite growing literature, there is little published concerning the comparison of processes that have been sampled across the same spatial region but which reflect different study conditions. Given a set of asymptotically Gaussian random fields, each corresponding to a sample acquired for a different study condition, this work aims to provide confidence statements about the intersection, or union, of the excursion sets across all fields. Such spatial regions are of natural interest as they directly correspond to the questions "all random fields exceed a predetermined threshold?", or "Where does at least one random field exceed a predetermined threshold?". To assess the degree of spatial variability present, we develop a method that provides, with a desired confidence, subsets and supersets of spatial regions defined by logical conjunctions (i.e. set intersections) or disjunctions (i.e. set unions), without any assumption on the dependence between the different fields. The method is verified by extensive simulations and demonstrated using a task-fMRI dataset to identify brain regions with activation common to four variants of a working memory task.}
+}
+@article{maullinsapey2022multi-MISC,
+  title={Multi-level Modelling and Spatial Inference for Large-Scale Neuroimaging Data (Postgraduate Thesis)},
+  author={Maullin-Sapey, T.},
+  year={2022},
+  journal={Postgraduate Thesis},
+  url={https://ora.ox.ac.uk/objects/uuid:425fac44-6413-47cc-b173-0a78c26aaf1c},
+  img={./img/misc/2022_multilevel_modelling_and_spatial.png},
+  abstract={Recent developments in data sharing and availability provide a vast new window of opportunity for large-sample fMRI analysis. The increased statistical power resulting from larger sample sizes allows researchers to model previously inaccessible phenomena such as the complex grouping structures present in large multi-level datasets (e.g. genetic, familial, geographical) and the spatial variation present in shape, size and locale of excursion sets (identified regions of activation). This thesis is comprised of two halves, which investigate each of these features in turn.}
+}
+@article{Topiwala2022,
+  title={Alcohol consumption and MRI markers of brain structure and function: Cohort study of 25,378 UK Biobank participants},
+  journal={NeuroImage: Clinical},
+  volume={35},
+  pages={103066},
+  year={2022},
+  issn={2213-1582},
+  doi={https://doi.org/10.1016/j.nicl.2022.103066},
+  author={Topiwala, A. and Ebmeier, K.P. and Maullin-Sapey, T. and Nichols, T.E.},
+  keywords={Alcohol, MRI, Cognition},
+  abstract={Moderate alcohol consumption is widespread but its impact on brain structure and function is contentious. The relationship between alcohol intake and structural and functional neuroimaging indices, the threshold intake for associations, and whether population subgroups are at higher risk of alcohol-related brain harm remain unclear. 25,378 UK Biobank participants (mean age 54.9 ± 7.4 years, 12,254 female) underwent multi-modal MRI 9.6 ± 1.1 years after study baseline. Alcohol use was self-reported at baseline (2006–10). T1-weighted, diffusion weighted and resting state images were examined. Lower total grey matter volumes were observed in those drinking as little as 7–14 units (56–112 g) weekly. Higher alcohol consumption was associated with multiple markers of white matter microstructure, including lower fractional anisotropy, higher mean and radial diffusivity in a spatially distributed pattern across the brain. Associations between functional connectivity and alcohol intake were observed in the default mode, central executive, attention, salience and visual resting state networks. Relationships between total grey matter and alcohol were stronger than other modifiable factors, including blood pressure and smoking, and robust to unobserved confounding. Frequent binging, higher blood pressure and BMI steepened the negative association between alcohol and total grey matter volume. In this large observational cohort study, alcohol consumption was associated with multiple structural and functional MRI markers in mid- to late-life.},
+  img={./img/publications/2022_Alcohol.png}
+}
+@article{maullinsapey2021fisher,
+  title={Fisher Scoring for Crossed Factor Linear Mixed Models},
+  author={Maullin-Sapey, T. and Nichols, T.E.},
+  year={2021},
+  journal={Statistics and Computing},
+  volume={31},
+  pages={53},
+  url={https://doi.org/10.1007/s11222-021-10026-6},
+  img={./img/publications/2021_FisherScoring.png},
+  doi={https://doi.org/10.1007/s11222-021-10026-6},
+  abstract={The analysis of longitudinal, heterogeneous or unbalanced clustered data is of primary importance to a wide range of applications. The linear mixed model (LMM) is a popular and flexible extension of the linear model specifically designed for such purposes. Historically, a large proportion of material published on the LMM concerns the application of popular numerical optimization algorithms, such as Newton–Raphson, Fisher Scoring and expectation maximization to single-factor LMMs (i.e. LMMs that only contain one “factor” by which observations are grouped). However, in recent years, the focus of the LMM literature has moved towards the development of estimation and inference methods for more complex, multi-factored designs. In this paper, we present and derive new expressions for the extension of an algorithm classically used for single-factor LMM parameter estimation, Fisher Scoring, to multiple, crossed-factor designs. Through simulation and real data examples, we compare five variants of the Fisher Scoring algorithm with one another, as well as against a baseline established by the R package lme4, and find evidence of correctness and strong computational efficiency for four of the five proposed approaches. Additionally, we provide a new method for LMM Satterthwaite degrees of freedom estimation based on analytical results, which does not require iterative gradient estimation. Via simulation, we find that this approach produces estimates with both lower bias and lower variance than the existing methods.}
+}
+@article{MAULLINSAPEY2022119729,
+  title={BLMM: Parallelised computing for big linear mixed models},
+  journal={NeuroImage},
+  volume={264},
+  pages={119729},
+  year={2022},
+  issn={1053-8119},
+  doi={https://doi.org/10.1016/j.neuroimage.2022.119729},
+  url={https://www.sciencedirect.com/science/article/pii/S1053811922008503},
+  author={Thomas Maullin-Sapey and Thomas E. Nichols},
+  abstract={Within neuroimaging large-scale, shared datasets are becoming increasingly commonplace, challenging existing tools both in terms of overall scale and complexity of the study designs. As sample sizes grow, researchers are presented with new opportunities to detect and account for grouping factors and covariance structure present in large experimental designs. In particular, standard linear model methods cannot account for the covariance and grouping structures present in large datasets, and the existing linear mixed models (LMM) tools are neither scalable nor exploit the computational speed-ups afforded by vectorisation of computations over voxels. Further, nearly all existing tools for imaging (fixed or mixed effect) do not account for variability in the patterns of missing data near cortical boundaries and the edge of the brain, and instead omit any voxels with any missing data. Yet in the large-n setting, such a voxel-wise deletion missing data strategy leads to severe shrinkage of the final analysis mask. To counter these issues, we describe the “Big” Linear Mixed Models (BLMM) toolbox, an efficient Python package for large-scale fMRI LMM analyses. BLMM is designed for use on high performance computing clusters and utilizes a Fisher Scoring procedure made possible by derivations for the LMM Fisher information matrix and score vectors derived in our previous work, Maullin-Sapey and Nichols (2021).},
+  img={./img/publications/2022_blmm.png}
+}
+@article{Maullin-Sapey2017-MISC, 
+author={Thomas Maullin-Sapey}, 
+  title={Visualisation and Integration of Multiple Brain Imaging Studies (Undergraduate Dissertation)}, 
+  year={2017},
+  url={https://figshare.com/articles/online_resource/Visualisation_and_Integration_of_Multiple_Brain_Imaging_Studies/21893061}, 
+  doi={10.6084/m9.figshare.21893061.v1},
+  img={./img/misc/2017_visualisation_and_integration.png},
+  journal={Undergraduate Dissertation},
+  abstract={This undergraduate dissertation aimed to develop tools allowing neuroimaging data to be easily shared, displayed and combined by means of tools that would encourage improved recording of data and further compatibility between existing Neuroimaging analysis software packages. The project consisted of two developments; a viewer displaying fMRI data shared in the NIDM (NeuroImaging Data Model) Results format, a recently published standard designed to promote rigorous data recording, and a toolbox allowing for the computation of several diagnostic measures often considered when combining fMRI data into a meta-analysis.}
+} 
+
+
+
