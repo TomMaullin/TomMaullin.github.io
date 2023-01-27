@@ -1,0 +1,56 @@
+@inproceedings{maullinsapey2022spatial,
+  title={Spatial Confidence Regions for Conjunctions of fMRI Effects},
+  author={Maullin-Sapey, T. and Schwartzman, A. and Nichols, T.E.},
+  year={2022},
+  booktitle={OHBM & RSS Conference Poster},
+  url={https://bit.ly/3IXgvHt},
+  doi={https://doi.org/10.6084/m9.figshare.21836901.v1},
+  img={./img/posters/2022_OHBM.png},
+  abstract={While cluster inference is a mainstay of fMRI analysis, the established tools can only provide p-values and no notion of spatial uncertainty of cluster location. Methods have been developed which create spatial confidence sets for ‘excursion sets’ (all clusters) but only for a single statistic image. In this work, we propose a method to find spatial confidence sets for the intersection or ‘conjunction’ of excursion sets over 2 or more study conditions. Such spatial regions are of natural interest as they correspond to the question “Where was activation observed under all study conditions?". Our method provides, with a desired confidence, sub- and super-sets of the conjunctions excursion sets without any assumptions on the dependence between the different fields. This poster was first presented at OHBM in Glasgow in 2022. It was later also presented at the RSS in Aberdeen in 2022.}
+}
+@inproceedings{maullinsapey2021blmm,
+  title={BLMM: Parallelised Computing for Big Linear Mixed Models},
+  author={Maullin-Sapey, T. and Nichols, T.E.},
+  year={2021},
+  booktitle={SMI Conference Poster},
+  url={https://doi.org/10.6084/m9.figshare.21842097.v1},
+  img={./img/posters/2021_SMI.png},
+  abstract={As sample sizes grow, researchers face mounting pressure to detect and account for complex covariance structures induced by the grouping factors present in the experimental design. Methods conventionally employed for drawing inference on neuroimaging data (e.g.  Ordinary Least Squares regression, t-tests and F-tests) often cannot account for the grouping structures present in large datasets and, consequently, can produce erroneous inferences. The linear mixed model (LMM) presents a flexible tool applicable to analyze longitudinal, heterogeneous or unbalanced clustered data. Here, we present BLMM (``Big" Linear Mixed Models); an efficient tool for large-scale LMM analyses, implemented in python and designed for use on SGE computer clusters. This poster was first presented online for SMI 2021.}
+}
+@inproceedings{maullinsapey2020blmm,
+  title={BLMM: Parallelised Computing for Big Linear Mixed Models},
+  author={Maullin-Sapey, T. and Nichols, T.E.},
+  year={2020},
+  booktitle={OHBM Conference Poster},
+  url={https://doi.org/10.6084/m9.figshare.21842172.v1},
+  img={./img/posters/2020_OHBM.png},
+  abstract={Population neuroimaging datasets have transformed fMRI sample sizes from tens to thousands of subjects. However, since many datasets cannot be shared due to ethical concerns or restrictive data usage agreements, investigators require efficient algorithms that fit complex statistical models using large volumes of decentralized, private data. The linear mixed model (LMM) presents a flexible tool applicable to analyze longitudinal, heterogeneous or unbalanced clustered data. Here, we present BLMM, a framework for computing decentralized and privacy-protected, mass-univariate ``Big" Linear Mixed Models with arbitrarily large numbers of subjects whilst accounting for the possibility of crossed random factors. This poster was first presented online for OHBM 2020.}
+}
+@inproceedings{maullinsapey2019blm,
+  title={BLM: Parallelized Computing for Big Linear Models},
+  author={Maullin-Sapey, T. and Nichols, T.E.},
+  year={2019},
+  booktitle={OHBM Conference Poster},
+  url={https://doi.org/10.6084/m9.figshare.21842208.v1},
+  img={./img/posters/2019_OHBM.png},
+  abstract={Big datasets such as IMAGEN (n=1,326), the Adolescent Brain Cognitive Development study (n=12,000) and the UK Biobank (n=100,000) are becoming commonplace. As datasets grow larger even performing a standard linear regression analysis is becoming increasingly demanding, with heavy overheads being placed on memory and computation time. Variability between in the patterns of missing data, especially near the edge of the brain, can become progressively problematic as sample sizes increase. This variability can cause shrinkage of the final analysis mask if missing data is not accommodated. Here we present BLM ("Big" Linear Models), an efficient tool for large-scale MRI GLM analyses, with parallel computing, implemented in python. This poster was first presented at OHBM 2019 in Rome.}
+}
+@inproceedings{maullinsapey2018detecting,
+  title={Detecting and Interpreting Heterogeneity and Publication Bias in Image-Based MetaAnalyses},
+  author={Maullin-Sapey, T. and Maumet, C. and Nichols, T.E.},
+  year={2018},
+  booktitle={OHBM Conference Poster},
+  abstract={With the increase of data sharing, meta-analyses are becoming increasingly important in the neuroimaging community. They provide a quantitative summary of published results and heightened confidence due to higher statistical power. The gold   standard approach to combine results from neuroimaging studies is an Image-Based Meta-Analysis (IBMA) in which group-level maps from different studies are combined. Recently, we have introduced the IBMA toolbox, an extension for SPM that provides methods for combining image maps from multiple studies. However, the current toolbox lacks diagnostic tools used to assess critical assumptions of meta-analysis, in particular whether there is inter-study variation requiring random-effects IBMA, and whether publication bias is present. Here, we present two new tools added to the IBMA toolbox to detect heterogeneity and to assess evidence of publication bias. This poster was originally presented at OHBM 2018 in Singapore.},
+  url={https://doi.org/10.6084/m9.figshare.21842349.v1},
+  img={./img/posters/2018_OHBM.png}
+}
+@inproceedings{maullinsapey2017viewing,
+  title={Viewing FSL results with SPM and vice versa},
+  author={Maullin-Sapey, T. et al.},
+  year={2017},
+  booktitle={OHBM Conference Poster},
+  url={https://doi.org/10.6084/m9.figshare.21861906.v1},
+  abstract={A growing number of efforts are emerging in the neuroimaging community to increase reproducibility of research findings. In an attempt to facilitate publishing of neuroimaging data and metadata, the NeuroImaging Data Model (NIDM) defines a set of specifications based on semantic web technologies. The NIDM-Results specification was recently introduced, providing a machine-readable representation of mass univariate statistical results, including extensive metadata and key images summarising the findings. NIDM-Results packs can be generated from SPM and FSL. However few tools exist to read and display NIDM-Results. Here, we introduce two NIDM-Results viewers, one each oriented for users
+  accustomed to SPM and FSL, two of the most widely-used neuroimaging analysis softwares. This poster was first presented at OHBM 2017 in Vancouver.},
+  img={./img/posters/2017_OHBM.png}
+}
