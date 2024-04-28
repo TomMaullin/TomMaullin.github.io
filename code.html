@@ -280,14 +280,14 @@
 
                             <ul>
                                 <li> 
-                                    <b> Confidence Regions Toolbox</b> 
+                                    <b> UK Biobank Deconfounding</b> 
                                     <br>
-                                    Role: Lead Developer, Project Status: Under Development (Coming Soon...), Language: Python.
+                                    Role: Lead Developer for Python Implementation, Project Status: Under Development (Coming Soon...), Language: Python.
                                     <br>
                                     <br>
-                                    Despite its central role in interpreting results, very little attention is given to the variability in signal location in fMRI analysis. To address this, this project aims to provide tools for generating spatial confidence regions: regions which act as probabilistic bounds for the locale of observed clusters and excursion sets. Such regions provide useful insight into fMRI uncertainty quantification and increase the transparency of analysis results. Tools under active development include confidence regions for raw (%BOLD), and standardized (Cohen’s D) effect size images, as well as for conjunction and peak inference. 
+                                    In collaboration with the FMRIB research centre, University of Oxford, I am currently working on a portable Python implementation of the UK Biobank deconfounding code that is currently used for inhouse FSL Biobank analyses. 
                                     <br>
-                                    <b>References:</b> <a href="#ref1">[1]</a>, <a href="#ref2">[2]</a>, <a href="#ref3">[3]</a>, <a href="#ref11">[11]</a>, <a href="#ref12">[12]</a>.
+                                    <b>References:</b> <a href="#ref1">[1]</a>.
                                     <br>
                                     <br>
                                 </li>
@@ -296,6 +296,20 @@
                             <h3>Current Software</h3>
 
                             <ul>
+                                <li> 
+                                    <b> Confidence Regions Toolbox</b> 
+                                    <br>
+                                    Role: Lead Developer, Project Status: Initial Implementation Active, Language: Python.
+                                    <br>
+                                    <br>
+                                    Despite its central role in interpreting results, very little attention is given to the variability in signal location in fMRI analysis. To address this, this project aims to provide tools for generating spatial confidence regions: regions which act as probabilistic bounds for the locale of observed clusters and excursion sets. Such regions provide useful insight into fMRI uncertainty quantification and increase the transparency of analysis results. Tools under active development include confidence regions for raw (%BOLD), and standardized (Cohen’s D) effect size images, as well as for conjunction inference. 
+                                    <br>
+                                    <b>References:</b> <a href="#ref2">[2]</a>, <a href="#ref3">[3]</a>, <a href="#ref4">[4]</a>, <a href="#ref12">[12]</a>, <a href="#ref13">[13]</a>.
+                                    <br>
+                                    <br>
+                                    <b>Source:</b> <a href="https://github.com/TomMaullin/crtoolbox">https://github.com/TomMaullin/crtoolbox</a>, <b>Demo:</b> <a href="https://github.com/TomMaullin/crtoolbox_demo">https://github.com/TomMaullin/crtoolbox_demo</a>
+                                    <br>
+                                </li>
                                 <li> 
                                     <b> BLMM: Big Linear Mixed Modelling</b> 
                                     <br>
@@ -307,7 +321,7 @@
                                     <br>
                                     <b>Source:</b> <a href="https://github.com/TomMaullin/BLMM">https://github.com/TomMaullin/BLMM</a>
                                     <br>
-                                    <b>References:</b> <a href="#ref9">[9]</a>, <a href="#ref10">[10]</a>.
+                                    <b>References:</b> <a href="#ref10">[10]</a>, <a href="#ref11">[11]</a>.
                                     <br>
                                     <br>
                                 </li>
@@ -323,7 +337,7 @@
                                     <br>
                                     <b>Source:</b> <a href="https://github.com/TomMaullin/BLM">https://github.com/TomMaullin/BLM</a>
                                     <br>
-                                    <b>Reference:</b> <a href="#ref10">[10]</a>.
+                                    <b>Reference:</b> <a href="#ref11">[11]</a>.
                                     <br>
                                     <br>
                                 </li>
@@ -342,7 +356,7 @@
                                     <br>
                                     <b>Source:</b> <a href="http://www.nisox.org/Software/SwE/">http://www.nisox.org/Software/SwE/</a>
                                     <br>
-                                    <b>References:</b> <a href="#ref4">[4]</a>, <a href="#ref5">[5]</a>, <a href="#ref6">[6]</a>.
+                                    <b>References:</b> <a href="#ref5">[5]</a>, <a href="#ref6">[6]</a>, <a href="#ref7">[7]</a>.
                                     <br>
                                     <br>
                                 </li>
@@ -358,7 +372,7 @@
                                     <br>
                                     <b>Source:</b> <a href="https://github.com/NeuroimagingMetaAnalysis/ibma">https://github.com/NeuroimagingMetaAnalysis/ibma</a>
                                     <br>
-                                    <b>Reference:</b> <a href="#ref7">[7]</a>.
+                                    <b>Reference:</b> <a href="#ref8">[8]</a>.
                                     <br>
                                     <br>
                                 </li>
@@ -373,7 +387,7 @@
                                     <br>
                                     <b>Source:</b> <a href="http://nidm.nidash.org/specs/nidm-results_130.html">http://nidm.nidash.org/specs/nidm-results_130.html</a>
                                     <br>
-                                    <b>Reference:</b> <a href="#ref8">[8]</a>.
+                                    <b>Reference:</b> <a href="#ref9">[9]</a>.
                                     <br>
                                 </li>
                             </ul>
@@ -384,39 +398,42 @@
                                 <div style="font-size:0.7em">
                                     <ol>
                                         <li id="ref1">
-                                            Bowring, A. (2019). <em>Spatial confidence sets for raw effect size images. NeuroImage, 203, 116187.</em> <a href="https://doi.org/10.1016/j.neuroimage.2019.116187">https://doi.org/10.1016/j.neuroimage.2019.116187</a>
+                                            Alfaro-Almagro, F. et al. (2020). <em>Confound modelling in UK Biobank brain imaging. NeuroImage, 224, 117002.</em><a href="https://doi.org/10.1016/j.neuroimage.2020.117002">https://doi.org/10.1016/j.neuroimage.2020.117002</a>
                                         </li>
                                         <li id="ref2">
-                                            Bowring, A., Telschow, F. J. E., Schwartzman, A., & Nichols, T. E. (2021).<em> Confidence Sets for Cohen’s d effect size images. NeuroImage, 226, 117477.</em> <a href="https://doi.org/10.1016/j.neuroimage.2020.117477">https://doi.org/10.1016/j.neuroimage.2020.117477</a>
+                                            Bowring, A. (2019). <em>Spatial confidence sets for raw effect size images. NeuroImage, 203, 116187.</em> <a href="https://doi.org/10.1016/j.neuroimage.2019.116187">https://doi.org/10.1016/j.neuroimage.2019.116187</a>
                                         </li>
                                         <li id="ref3">
-                                            Davenport, S., Nichols, T. E., & Schwarzman, A. (2022).<em> Confidence regions for the location of peaks of a smooth random field. arXiv.</em> <a href="https://doi.org/10.48550/arxiv.2208.00251">https://doi.org/10.48550/arxiv.2208.00251</a>
+                                            Bowring, A., Telschow, F. J. E., Schwartzman, A., & Nichols, T. E. (2021).<em> Confidence Sets for Cohen’s d effect size images. NeuroImage, 226, 117477.</em> <a href="https://doi.org/10.1016/j.neuroimage.2020.117477">https://doi.org/10.1016/j.neuroimage.2020.117477</a>
                                         </li>
                                         <li id="ref4">
-                                            Guillaume, B. (2015).<em> Accurate non-iterative modelling and inference of longitudinal neuroimaging data. ULiège-Université de Liège [Médecine vétérinaire].</em>
+                                            Davenport, S., Nichols, T. E., & Schwarzman, A. (2022).<em> Confidence regions for the location of peaks of a smooth random field. arXiv.</em> <a href="https://doi.org/10.48550/arxiv.2208.00251">https://doi.org/10.48550/arxiv.2208.00251</a>
                                         </li>
                                         <li id="ref5">
-                                            Guillaume, M., & Nichols, T. E. (2014).<em> Fast and accurate modelling of longitudinal and repeated measures neuroimaging data. NeuroImage, 84, 287-298.</em> <a href="https://doi.org/10.1016/j.neuroimage.2014.03.029">https://doi.org/10.1016/j.neuroimage.2014.03.029</a>
+                                            Guillaume, B. (2015).<em> Accurate non-iterative modelling and inference of longitudinal neuroimaging data. ULiège-Université de Liège [Médecine vétérinaire].</em>
                                         </li>
                                         <li id="ref6">
-                                            Guillaume, B., Nichols, T., et al. (2017).<em> Non-parametric Inference for Longitudinal and Repeated-Measures Neuroimaging Data with the Wild Bootstrap. figshare.</em> <a href="https://doi.org/10.6084/m9.figshare.5478229.v1">https://doi.org/10.6084/m9.figshare.5478229.v1</a>
+                                            Guillaume, M., & Nichols, T. E. (2014).<em> Fast and accurate modelling of longitudinal and repeated measures neuroimaging data. NeuroImage, 84, 287-298.</em> <a href="https://doi.org/10.1016/j.neuroimage.2014.03.029">https://doi.org/10.1016/j.neuroimage.2014.03.029</a>
                                         </li>
                                         <li id="ref7">
-                                            Maumet, C., & Nichols, T. (2014).<em> IBMA: An SPM toolbox for NeuroImaging Image-Based Meta-Analysis. Frontiers in Neuroinformatics, 8.</em> <a href="https://doi.org/10.3389/conf.fninf.2014.18.00025">https://doi.org/10.3389/conf.fninf.2014.18.00025</a>
+                                            Guillaume, B., Nichols, T., et al. (2017).<em> Non-parametric Inference for Longitudinal and Repeated-Measures Neuroimaging Data with the Wild Bootstrap. figshare.</em> <a href="https://doi.org/10.6084/m9.figshare.5478229.v1">https://doi.org/10.6084/m9.figshare.5478229.v1</a>
                                         </li>
                                         <li id="ref8">
-                                            Maumet, C., Auer, T., Bowring, A., et al. (2016).<em> Sharing brain mapping statistical results with the neuroimaging data model. Scientific Data, 3(1), 160102.</em> <a href="https://doi.org/10.1038/sdata.2016.102">https://doi.org/10.1038/sdata.2016.102</a>
+                                            Maumet, C., & Nichols, T. (2014).<em> IBMA: An SPM toolbox for NeuroImaging Image-Based Meta-Analysis. Frontiers in Neuroinformatics, 8.</em> <a href="https://doi.org/10.3389/conf.fninf.2014.18.00025">https://doi.org/10.3389/conf.fninf.2014.18.00025</a>
                                         </li>
                                         <li id="ref9">
-                                            Maullin-Sapey, T., & Nichols, T. E. (2021).<em> Fisher scoring for crossed factor linear mixed models. Statistics and Computing, 31(5), 53.</em> <a href="https://doi.org/10.1007/s11222-021-10026-6">https://doi.org/10.1007/s11222-021-10026-6</a>
+                                            Maumet, C., Auer, T., Bowring, A., et al. (2016).<em> Sharing brain mapping statistical results with the neuroimaging data model. Scientific Data, 3(1), 160102.</em> <a href="https://doi.org/10.1038/sdata.2016.102">https://doi.org/10.1038/sdata.2016.102</a>
                                         </li>
                                         <li id="ref10">
-                                            Maullin-Sapey, T., & Nichols, T. E. (2022).<em> BLMM: Parallelised computing for big linear mixed models. NeuroImage, 264, 119729.</em> <a href="https://doi.org/10.1016/j.neuroimage.2022.119729">https://doi.org/10.1016/j.neuroimage.2022.119729</a>
+                                            Maullin-Sapey, T., & Nichols, T. E. (2021).<em> Fisher scoring for crossed factor linear mixed models. Statistics and Computing, 31(5), 53.</em> <a href="https://doi.org/10.1007/s11222-021-10026-6">https://doi.org/10.1007/s11222-021-10026-6</a>
                                         </li>
                                         <li id="ref11">
-                                            Maullin-Sapey, T., Schwartzman, A., & Nichols, T. E. (2022).<em> Spatial Confidence Regions for Combinations of Excursion Sets in Image Analysis. arXiv.</em> <a href="https://doi.org/10.48550/arxiv.2201.02743">https://doi.org/10.48550/arxiv.2201.02743</a>
+                                            Maullin-Sapey, T., & Nichols, T. E. (2022).<em> BLMM: Parallelised computing for big linear mixed models. NeuroImage, 264, 119729.</em> <a href="https://doi.org/10.1016/j.neuroimage.2022.119729">https://doi.org/10.1016/j.neuroimage.2022.119729</a>
                                         </li>
                                         <li id="ref12">
+                                            Maullin-Sapey, T., Schwartzman, A., & Nichols, T. E. (2022).<em> Spatial Confidence Regions for Combinations of Excursion Sets in Image Analysis. arXiv.</em> <a href="https://doi.org/10.48550/arxiv.2201.02743">https://doi.org/10.48550/arxiv.2201.02743</a>
+                                        </li>
+                                        <li id="ref13">
                                             Sommerfeld, M., Sain, S., & Schwartzman, A. (2018).<em> Confidence regions for spatial excursion sets from repeated random field observations, with an application to climate. Journal of the American Statistical Association, 113(523), 1327-1340.</em> <a href="https://doi.org/10.1080/01621459.2017.1341838">https://doi.org/10.1080/01621459.2017.1341838</a>
                                         </li>
                                     </ol>
