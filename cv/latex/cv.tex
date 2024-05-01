@@ -15,6 +15,9 @@
 }
 \usepackage{longtable}
 \usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \addbibresource{talks.bib}
 \addbibresource{articles.bib}
 \addbibresource{code.bib}
@@ -33,6 +36,7 @@
 \newenvironment{mysec}[1][\mytabs]
   {\begin{tabbing}#1\kill\ignorespaces}
   {\end{tabbing}}
+\usepackage{wrapfig,sidecap}
 \begin{document}
 \header{\hspace{5mm}\Huge{Thomas J.}}{ \Huge{Maullin-Sapey}}
       {\hspace{5cm} Researcher in Neuroimaging Statistics}
@@ -49,7 +53,7 @@
 Nuffield Department of Population Health,\\ University of Oxford,\\ Oxford, UK} 
     ~
   \section{\normalsize{Tel. \& Skype}}
-    MARKER
+    07881 306097
     TomMaullin
     ~
   \section{\normalsize{Mail}}
@@ -65,25 +69,51 @@ Nuffield Department of Population Health,\\ University of Oxford,\\ Oxford, UK}
     \href{https://linkedin.com/in/tommaullin/}{linkedin.com/in/TomMaullin/}
     ~
   \section{\normalsize{Programming}}
-    \vspace{2mm}\includegraphics[scale=0.42]{img/piechart.png}
+    \vspace{2mm}\hspace*{-0.7cm}\includegraphics[scale=0.43]{img/piechart.png}
     ~
 \end{aside}
 \vspace{0.5cm}
 \section{About}
 
-At present, I am an early career researcher at the Big Data Institute, University of Oxford. My research interests include distributed machine learning, spatial statistics, linear mixed models, and random field theory. Most recently, I have worked on establishing probabilistic bounds for random excursion sets and introducing novel derivations for mixed model parameter estimation. 
+At present, I am a postdoctoral researcher at the Big Data Institute, University of Oxford. My research interests include distributed machine learning, spatial statistics, linear mixed models, and random field theory. Most recently, I have worked on establishing probabilistic bounds for random excursion sets and introducing novel derivations for mixed model parameter estimation. 
 
 For detailed information, publication lists, and regular updates, please visit my academic website at
 \underline{\href{https://TomMaullin.com}{TomMaullin.com}}. 
 \vspace{0.3cm}
 
-\section{Academic Work}
+\section{Research Overview}
+
+\underline{Linear Mixed Models:} The analysis of longitudinal, heterogeneous or unbalanced clustered data is central to neuroimaging analysis. Such analyses are typically conducted using the Linear Mixed Model (LMM) but, over time, the breadth of models considered to fall under the umbrella term `LMM' has expanded to include more complex, multi-factored designs. In my research on this topic, I extend classic methods for LMM parameter estimation and inference to encompass the modern-day definition. Applications include large-scale computation, privacy-protected algorithms, and a clinical study investigating the link between alcohol consumption and brain function ([\href{https://doi.org/10.1007/s11222-021-10026-6}{1},\href{https://doi.org/10.1016/j.neuroimage.2022.119729}{2},\href{https://doi.org/10.1016/j.nicl.2022.103066}{3},\href{https://doi.org/10.1007/s12021-024-09657-7}{4}]).
+
+\begin{wrapfigure}[15]{r}{0.53\textwidth}
+    \vspace*{-0.7cm}
+	\includegraphics[width=0.49\textwidth]{CRfig}
+	\caption{\label{fig:fMRI} Illustration of an excursion set, $\mathcal{A}_c$, being derived from a random field $\mu(s)$. In fMRI, $\mathcal{A}_c$ is projected onto a $T_1$ image of brain anatomy to assess where activation occurs within the brain.}\vspace*{-0.2cm}
+	%\vspace{-10pt}
+\end{wrapfigure}
+
+\underline{Random Field Theory:} A random field is a continuously differentiable function which varies over space, like the surface of the ocean or heat in a weather map. Random fields are central to a range of applications such as climatology, neuroscience and cosmology. In forthcoming work in this area, in the context of simple signal plus noise models, we derive minimal regularity conditions under which estimated topological features of random fields (such as Morse points and Betti numbers) resemble those of truth, and provide novel central limit theorems for the size of random clusters.
+
+\underline{Confidence Regions:} Researchers often are interested in questions of the form ``At which locations does a signal, $\mu$, exceed a certain value $c$?". For example, ``Where did large temperature changes occur in a geospatial heatmap?" or ``Where do changes in blood flow in the brain suggest cognition?". Such questions translate formally into the study of excursion sets, sets of the form $\mathcal{A}_c:=\{s:\mu(s)\geq c\}$ (Fig. \ref{fig:fMRI}). Confidence Regions (CRs) illustrate the variability in estimating such regions, providing bounds on their shape and size. Presently, I am involved in a range of CR-themed projects including; (i) generating CRs for piece-wise continuous processes, (ii) using CRs to assist presurgical planning and (iii) deriving `cluster-specific' CR coverage statements. In previous work, I derived novel CR methodology for bounding intersections and unions of excursion sets ([\href{https://doi.org/10.1093/jrsssb/qkad104}{5}]).
+
+\newpage
+\newgeometry{left=2cm, right=2cm}
+\section{Academic Writing}
 \footnotesize{
 \begin{itemize}
+    \item Basodi, S., Rajikha, R., Gazula, H., Romero, J., Panta ,S., Maullin-Sapey T., Nichols, T.E. \& Calhoun, V. (2024). Decentralized Mixed Effects Modeling in COINSTAC. Neuroinformatics, 22(2). \url{https://doi.org/10.1007/s12021-024-09657-7}
     \item Maullin-Sapey, T., Schwartzman, A., \& Nichols, T.E. (2023). Spatial Confidence Regions for Combinations of Excursion Sets in Image Analysis. Journal of the Royal Statistical Society Series B: Statistical Methodology 86(1). \url{https://doi.org/10.1093/jrsssb/qkad104}
     \item Maullin-Sapey, T. (2022). Multi-level Modelling and Spatial Inference for Large-Scale Neuroimaging Data. Postgraduate Thesis. \url{https://ora.ox.ac.uk/objects/uuid:425fac44-6413-47cc-b173-0a78c26aaf1c}
     \item Topiwala, A., Ebmeier, K.P., Maullin-Sapey, T., \& Nichols, T.E. (2022). Alcohol consumption and MRI markers of brain structure and function: Cohort study of 25,378 UK Biobank participants. NeuroImage: Clinical, 35, 103066. \url{https://doi.org/10.1016/j.nicl.2022.103066}
     \item Maullin-Sapey, T., \& Nichols, T.E. (2022). BLMM: Parallelised computing for big linear mixed models. NeuroImage, 264, 119729. \url{https://doi.org/10.1016/j.neuroimage.2022.119729}
+    \item Maullin-Sapey, T, \& Nichols, T.E. (2021). Fisher Scoring for Crossed Factor Linear Mixed Models. Statistics and Computing, 31, 53. \url{https://doi.org/10.1007/s11222-021-10026-6}
+    \item Maullin-Sapey, T. (2017). Visualisation and Integration of Multiple Brain Imaging Studies. Undergraduate Dissertation. \url{https://doi.org/10.6084/m9.figshare.21893061.v1}
+\end{itemize}
+}
+\normalsize
+\section{Conference Posters}
+\footnotesize{
+\begin{itemize}
     \item Maullin-Sapey, T., Schwartzman, A., \& Nichols, T. E. (2022). Spatial Confidence Regions for Conjunctions of fMRI Effects. OHBM \& RSS Conference Poster. \url{https://doi.org/10.6084/m9.figshare.21836901.v1}
     \item Maullin-Sapey, T, \& Nichols, T.E. (2021). Fisher Scoring for Crossed Factor Linear Mixed Models. Statistics and Computing, 31, 53. \url{https://doi.org/10.1007/s11222-021-10026-6}
     \item Maullin-Sapey, T., \& Nichols, T.E. (2021). BLMM: Parallelised Computing for Big Linear Mixed Models. SMI Conference Poster.\url{https://doi.org/10.6084/m9.figshare.21842097.v1}
@@ -95,6 +125,19 @@ For detailed information, publication lists, and regular updates, please visit m
 \end{itemize}
 }
 \normalsize
+\section{Selected Talks}
+\footnotesize{
+\begin{itemize}
+    \item Maullin-Sapey, T. (2024, April 26). Spatial Confidence Regions and Uncertainty in fMRI. Statistics Seminar Series at the School of Mathematics, University of Bristol. \url{https://doi.org/10.6084/m9.figshare.25709775.v1}
+    \item Maullin-Sapey, T. (2024, January 18). Small Sample Studies in fMRI Neuroscience. Thematic Einstein Seminar (TES) series on small data analysis, Zuse Institute Berlin (ZIB). \url{https://doi.org/10.6084/m9.figshare.25709778.v1}
+    \item Maullin-Sapey, T. (2022, November 10). BLMM: A toolbox for parameter estimation and inference on big linear mixed models on NeuroImaging data. University of California Spatial Statistics Reading Group. \url{https://doi.org/10.6084/m9.figshare.21892947.v1}
+    \item Maullin-Sapey, T. (2022, September 13). Rapid Fire Introduction to Spatial Confidence Regions. Royal Statistical Society Rapid Fire Sessions. \url{https://doi.org/10.6084/m9.figshare.21892980.v1}
+    \item Maullin-Sapey, T. (2022, June 6). Spatial Confidence Regions for Combinations of Excursion Sets in Image Analysis. FMRIb Reading Group. \url{https://doi.org/10.6084/m9.figshare.21892995.v1}
+\end{itemize}
+}
+\normalsize
+
+
 
 
 
@@ -126,12 +169,12 @@ For detailed information, publication lists, and regular updates, please visit m
      & \\
      & I hold a 2:1 in BSc Data Science (Hons) from the University of Warwick. This course was comprised of modules from the Computer Science, Mathematics and Statistics programs, respectively. Through my courses, I developed a broad range of skills relevant to statistics and computing, including the ability to efficiently program in Java, R and SQL, as well as logical deduction, proof methods and the understanding and application of several widely-used statistical models.\\
     % \\
-    % \underline{References:} \\ Professor Thomas Nichols (MARKER) \\Professor Armin Schwartzman (MARKER)}}
+    % \underline{References:} \\ Professor Thomas Nichols (+44(0)1865 743590) \\Professor Armin Schwartzman (+1 858 534 8928)}}
     % \\
 \end{tabular}
 
     % \\
-    % \underline{References:} \\ Professor Thomas Nichols (MARKER) \\Professor Armin Schwartzman (MARKER)}}
+    % \underline{References:} \\ Professor Thomas Nichols (+44(0)1865 743590) \\Professor Armin Schwartzman (+1 858 534 8928)}}
     % \\
  
 \section{Selected Work Experience}
@@ -139,26 +182,26 @@ For detailed information, publication lists, and regular updates, please visit m
 
 
 \begin{longtable}{p{0.15\linewidth} p{0.1\linewidth} p{0.75\linewidth}}
-     2022-Present: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Post-doctorate Researcher in Neuroimaging Statistics}} \\
+     2022-Present: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Postdoctoral Researcher in Neuroimaging Statistics}} \\
      & \multicolumn{2}{p{0.85\linewidth}}{\textit{Big Data Institute, University of Oxford, OX3 7LF}} \\
      & \\
-     & \textbf{Roles:} & As a postdoctoral researcher, I was funded by an NIH R01 award for a project that focused on spatial confidence regions for fMRI results. During my time in this position, I have published multiple papers, attended conferences such as \textit{Organisation for Human Brain Mapping} and \textit{Royal Statistical Society}, presented posters and talks, and was actively involved in developing the grant’s renewal.  
+     & \textbf{Roles:} & As a postdoctoral researcher, I was funded by an NIH R01 award for a project that focused on spatial confidence regions for fMRI results. During my time in this position, I have published multiple papers, attended conferences such as \textit{Organisation for Human Brain Mapping} and \textit{Royal Statistical Society}, presented posters and talks, and submitted multiple grant applications, the results of which I am currently waiting on.  
      & \\
-     & \textbf{Skills acquired:} & Experience publishing academic work, preparing grants, building research networks, strengthened knowledge of topology, probability theory and manifolds.\\
+     & \textbf{Skills acquired:} & Experience publishing academic work, preparing grants and building research networks; strengthened knowledge of topology, probability theory and manifolds.\\
      & \\
      & \\
-     2020-2022: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Graduate Teaching for Health and Data Sciences CDT programme}} \\
+     2020-Present: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Graduate Teaching for Health and Data Sciences CDT programme}} \\
      & \multicolumn{2}{p{0.85\linewidth}}{\textit{Big Data Institute, University of Oxford, OX3 7LF}} \\
      & \\
-     & \textbf{Roles:} & My primary role involved compiling and teaching material for the ‘Introduction to Python’ (2020, 2021 and 2022) and `Imaging with Nilearn (2021 and 2022) courses. In addition, I assisted with tutoring the ‘Modern Statistical Methods’ 2021 and ‘Data Challenge’ 2020 and 2022 courses. For the ‘Data Challenge’ held in 2020, my role additionally entailed extensive preparation and analysis of NHS Covid-19 data for the students to further investigate.\\
+     & \textbf{Roles:} & Since 2020, I have taught on the Health and Data Sciences CDT programme at the Big Data Institute, University of Oxford. In particular, I organize and run the `Introduction to Python' and `Imaging with Nilearn' intensive crash courses, mentor small teams of students in statistical analysis on the 'Data Challenge' course, give the introductory fMRI lectures, and have previously assisted on the `Computational Statistics' and `Modern Statistical Methods' courses. For the 2020 ‘Data Challenge’, my role additionally entailed extensive preparation and analysis of NHS Covid-19 data for the students to further investigate. A full list of my teaching, alongside course materials may be found \href{https://tommaullin.com/teaching.html}{\underline{here}}.\\
      & \\
      & \textbf{Skills acquired:} & Experience preparing educational content, experience teaching students across different backgrounds and with varying skill levels, effective communication skills, practical experience working with NHS Covid-19 data. \\
      & \\
      & \\
-      2019-2021: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Tutoring Assistant for Interdisciplinary Bioscience CDT programme}} \\
+      2019-Present: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Graduate Teaching for Interdisciplinary Bioscience CDT programme}} \\
      & \multicolumn{2}{p{0.85\linewidth}}{\textit{Doctoral Training Centre, University of Oxford,  OX1 3NP}} \\
      & \\
-     & \textbf{Roles:} & In November 2019, 2020 and 2021, I helped tutor the ‘Modern Statistical Methods’ and ‘Machine Learning’ introduction courses for the Interdisciplinary Bioscience programme at Oxford. These were introductory classes for students to learn about CNN’s and regression modelling. Both classes were written in the programming language R.\\
+     & \textbf{Roles:} & Since 2023, I have lead the 'Introduction to Machine Learning' and 'Statistical Methods' classes for the Interdisciplinary Bioscience CDT programme, before which I tutored on the previous iterations of the courses.~I now design the curriculum for these short, intensive modules, prepare the course material and deliver the practicals and lectures. These are introductory classes for students to learn about CNN’s and regression modelling. Both classes are given in the programming language R.\\
      & \\
      & \textbf{Skills acquired:} & Teaching experience, communication skills. \\
      & \\
@@ -169,14 +212,6 @@ For detailed information, publication lists, and regular updates, please visit m
      & \textbf{Roles:} & Writing academic papers, creating and presenting conference posters, maintaining software.\\
      & \\
      & \textbf{Skills acquired:} & Experience with Bash, Python, CI testing and Docker containers. Understanding of random field theory, functional connectivity and time series methods used in neuroimaging. \\
-     & \\
-     & \\
-      2016-2017: & \multicolumn{2}{p{0.85\linewidth}}{\textbf{Neuroimaging Student Intern}} \\
-     & \multicolumn{2}{p{0.85\linewidth}}{\textit{International Digital Laboratory, University of Warwick, CV4 7AL}} \\
-     & \\
-     & \textbf{Roles:} & Developing software, providing documentation, presenting talks at conferences.\\
-     & \\
-     & \textbf{Skills acquired:} & Written and verbal communication skills, competency with GitHub, MatLab coding experience. \\
      & \\
      & \\
      
